@@ -3,11 +3,11 @@ def my_sort(ma_liste): # Création de fonction
     compteur = 0 # Compteur de coup
     for nombre in ma_liste: # Boucle - Pour chaque nombre dans ma liste -
         index = 0 # Index de la nouvelle liste
-        while index < len(nouvelle_liste) and nouvelle_liste[index] < nombre: 
-            # Tant que l'index est < à la taille de la nouvelle liste et que l'index de la nouvelle liste < que le nombre à trier
+        while index < len(nouvelle_liste) and nouvelle_liste[index] < nombre: # Tant que l'index est < à la taille de la nouvelle liste 
+            # et que l'index de la nouvelle liste < que le nombre à trier
             index += 1 # Incrémentation de l'index
             compteur += 1 # Incrémentation du compteur de coup
-        nouvelle_liste.insert(index, nombre) # Ajout dans nouvelle liste à l'index n-1 ou n-2 en fonction 
+        nouvelle_liste.insert(index, nombre) # Ajout dans nouvelle liste à l'index n-1 ou n-2 en fonction de sa "taille"
     print("Nombre de coups : " + str(compteur)) # Affichage du nombre de coup
     return nouvelle_liste # Retour des résultats de la nouvelle liste
     
